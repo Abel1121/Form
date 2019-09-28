@@ -1,5 +1,7 @@
 const field = document.querySelector('.textfield');
 
-field.addEventListener('change', (event) => {
-  field.classList.add("dirty");
+field.forEach(element => {
+  element.addEventListener('change', (event) => {
+    field.classList.add("dirty");
+  });
 });
